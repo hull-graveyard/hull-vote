@@ -1,0 +1,45 @@
+{{#if loggedIn}}
+  <p class="text-center" for="reviewsText">Something to say?</p>
+  <textarea class="input-block-level" id="reviewsText">{{reviews.description}}</textarea>
+  <div class='row-fluid'>
+    <div class='span6'>
+      <button class='btn btn-large btn-block btn-success' data-hull-action="review" data-hull-value="1">Yes</button>
+    </div>
+    <div class='span6'>
+      <button class='btn btn-large btn-block btn-danger' data-hull-action="review" data-hull-value="0">No</button>
+    </div>
+  </div>
+{{else}}
+  <p>Login to vote.</p>
+{{/if}}
+<hr/>
+{{#split}}
+  <div class='row-fluid text-center'>
+    <div class='span6'>
+      <span class='badge badge-success'><h1>{{yes}}</h1></span>
+    </div>
+    <div class='span6'>
+      <span class='badge badge-important'><h1>{{no}}</h1></span>
+    </div>
+  </div>
+{{/split}}
+<hr/>
+
+{{#if reviews}}
+  <ul class="unstyled">
+    {{#reviews}}
+      <li class="hull-reviews__list__item">
+        <strong>{{user.name}}</strong> voted
+        {{#if rating}}
+          <span class='label label-success'>Yes</span>
+        {{else}}
+          <span class='label label-error'>No</span>
+        {{/if}}
+        {{#if description}}
+          <p><em>"{{description}}"</em></p>
+        {{/if}}
+      </li>
+    {{/reviews}}
+  </ul>
+{{/if}}
+<div data-hull-widget="login_button@hull"></div>
