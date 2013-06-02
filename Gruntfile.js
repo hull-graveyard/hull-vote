@@ -155,6 +155,13 @@ module.exports = function (grunt) {
         src: ['app/widgets/**/*.js'],
         dest: 'app/scripts/widgets.js'
       }
+    },
+
+   'gh-pages': {
+      options: {
+        // Task-specific options go here.
+      },
+      src: ['index.html', 'js/**/*', 'css/**/*', 'img/**/*']
     }
   });
 
