@@ -33,8 +33,7 @@ Now initialize hull.
       });
     </script>
 
-Replace `APPLICATION_ID` and `ORGANIZATION_URL` with the correct values from
-your [admin](http://hullapp.io).
+Replace `APPLICATION_ID` and `ORGANIZATION_URL` with the correct values from your [admin](http://hullapp.io).
 
 ## Step 2 - Add the vote widget
 
