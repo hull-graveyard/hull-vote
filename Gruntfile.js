@@ -13,9 +13,11 @@ var yeomanConfig = {
 module.exports = function (grunt) {
   'use strict';
 
+
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
   grunt.initConfig({
+
     yeoman: yeomanConfig,
 
     open: {
@@ -91,9 +93,6 @@ module.exports = function (grunt) {
         files: {
           'dist/scripts/application.js': [
             'app/scripts/*.js'
-          ],
-          'dist/scripts/components.js': [
-            'app/components/jquery/jquery.min.js'
           ]
         }
       }
@@ -157,12 +156,6 @@ module.exports = function (grunt) {
       }
     },
 
-   'gh-pages': {
-      options: {
-        // Task-specific options go here.
-      },
-      src: ['index.html', 'js/**/*', 'css/**/*', 'img/**/*']
-    }
   });
 
   grunt.registerTask('server', [
