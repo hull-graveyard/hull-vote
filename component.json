@@ -1,7 +1,7 @@
 {
-  "name": "hullcolors",
+  "name": "hull-vote",
   "version": "0.1.0",
   "dependencies": {
-    "jquery": "1.8.x"
+    "jquery": "2.0.x"
   }
 }
