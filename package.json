@@ -37,5 +37,8 @@
     "grunt-github-pages": "0.0.3",
     "bower": "~0.9.2"
   },
-  "keywords": []
+  "keywords": [],
+  "scripts": {
+    "postinstall": "`npm bin`/bower install"
+  }
 }
