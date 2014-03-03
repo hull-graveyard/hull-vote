@@ -3,4 +3,4 @@ Hull.init({
     orgUrl: "http://hull-demos.hullapp.io",
     debug: true,
     verbose:true
-}); 
+});
