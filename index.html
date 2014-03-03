@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hullo World!</title>
+    <link href="//hullstrap.s3.amazonaws.com/stylesheets/hullstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/application.css">
+    <script src="//code.jquery.com/jquery-2.0.0.js"></script>
+    <script src="//hullstrap.s3.amazonaws.com/javascripts/hullstrap.js"></script>
+    <script src="https://d3f5pyioow99x0.cloudfront.net/develop/hull.js"></script>
+  </head>
+  <body>
+
+
+    <div class="wrapper featurette featurette-top-shadow">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span12 align-center text-center">
+            <h3>Vote on these issues</h3>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span4 offset2">
+            <div class="well" data-hull-component="votes/button@hull" data-hull-id="entity:Pothole on the street, broadway walnut">Loading...</div>
+            <div class="well" data-hull-component="votes/button@hull" data-hull-id="entity:Broken window near Pearl">Loading...</div>
+          </div>
+          <div class="span4">
+            <div class="well" data-hull-component="activity/feed@hull">Loading...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="scripts/application.js"></script>
+
+
+    <div data-hull-component="utils/footer@hull"></div>
+
+    <!-- Github Ribbon -->
+    <a href="https://github.com/hull/hull-vote"><img style="position: absolute; top: 0; right: 0; border: 0" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+  </body>
+</html>
